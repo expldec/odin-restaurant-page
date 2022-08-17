@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body #content {
+    width: 100%;
+    background: linear-gradient(to top, #00000088, #00000088), url(./restaurant-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+#content nav {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    background-color: beige;
+}
+
+nav .logo img {
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+#content nav ul {
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#content nav ul li {
+    margin: 0 max(3%, 1rem);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: calc(1rem - 6px);
+    border-bottom: 6px solid transparent;
+}
+#content nav ul li.active {
+    border-bottom-color: black;
+}
+
+#homepage-info {
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#homepage-info > div {
+    background-color: #ffffff88;
+    width: max(60%, 320px);
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#food-carousel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#food-carousel .dish-thumb {
+    flex-basis: calc(50% - 1rem);
+    margin: 0.5rem
+}
+
+.dish-thumb img {
+    width: 100%;
+    border-radius: 1rem;
+}
