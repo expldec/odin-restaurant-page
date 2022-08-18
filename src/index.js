@@ -1,6 +1,7 @@
 import "./style.css";
 import { buildHome } from "./homepage";
 import { buildMenu } from "./menu";
+import { buildContact } from "./contact";
 
 function clearContent() {
     let content = document.getElementById('content');
@@ -50,6 +51,8 @@ headerTabs.forEach((element,index) => {
             // console.log('hi');
         } else if (this.id === 'nav-menu') {
             content.appendChild(buildMenu())
+        } else if (this.id === 'nav-contact') {
+            content.appendChild(buildContact())
         } else {
             let dummyContent = document.createElement('div');
             dummyContent.id = 'content';
